@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editor de Texto DOM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h1>Editor de Texto DOM</h1>
+      <p class="text-muted">Personaliza el texto en tiempo real</p>
+    </div>
+
+    <div class="mb-4">
+      <div id="demo-element" class="p-4 rounded shadow-sm text-center text-element">
+        Tu texto aparecerá aquí
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <label for="input-text">Cambiar Texto:</label>
+        <input type="text" id="input-text" class="form-control" placeholder="Escribe algo..." />
+        <button id="btn-update-text" class="btn btn-primary w-100 mt-2">Actualizar Texto</button>
+      </div>
+
+      <div class="col-md-4">
+        <label for="input-color">Color de Texto:</label>
+        <input type="color" id="input-color" class="form-control form-control-color" value="#ffffff"/>
+        <button id="btn-update-color" class="btn btn-success w-100 mt-2">Aplicar Color</button>
+      </div>
+
+      <div class="col-md-4">
+        <label for="input-size">Tamaño de Fuente (px):</label>
+        <input type="number" id="input-size" class="form-control" min="8" max="100" value="16"/>
+        <button id="btn-update-size" class="btn btn-warning w-100 mt-2">Aplicar Tamaño</button>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-4">
+      <div class="col-md-4">
+        <label for="input-bgcolor">Color de Fondo:</label>
+        <input type="color" id="input-bgcolor" class="form-control form-control-color" value="#0d6efd"/>
+        <button id="btn-update-bgcolor" class="btn btn-secondary w-100 mt-2">Aplicar Fondo</button>
+      </div>
+
+      <div class="col-md-4">
+        <label for="font-select">Fuente:</label>
+        <select id="font-select" class="form-select">
+          <option value="Arial">Arial</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Verdana">Verdana</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label for="font-style-select">Estilo de Fuente:</label>
+        <select id="font-style-select" class="form-select">
+          <option value="normal">Normal</option>
+          <option value="italic">Cursiva</option>
+          <option value="bold">Negrita</option>
+          <option value="bold italic">Negrita + Cursiva</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

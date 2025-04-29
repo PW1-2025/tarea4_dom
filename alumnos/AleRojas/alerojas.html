@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de DOM Mejorado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Panel de personalización -->
+    <div class="container">
+        <h1>Ale Rojas DOM Básico</h1>
+        <h1>Personalización General</h1>
+
+        <div class="opciones-personalizacion">
+            <div class="opcion-grupo">
+                <label for="fondoPagina">Fondo de página:</label>
+                <select id="fondoPagina">
+                    <option value="#f5f5f5">Original</option>
+                    <option value="#000000">Negro</option>
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#00FF00">Verde</option>
+                    <option value="#0000FF">Azul</option>
+                    <option value="#FF00FF">Magenta</option>
+                </select>
+            </div>
+
+            <div class="opcion-grupo">
+                <label for="fondoContenedor">Fondo contenedores:</label>
+                <select id="fondoContenedor">
+                    <option value="#ffffff">Original</option>
+                    <option value="#f0f0f0">Gris claro</option>
+                    <option value="#fffacd">Amarillo claro</option>
+                    <option value="#e6e6fa">Lavanda</option>
+                    <option value="#ffe4e1">Rosa claro</option>
+                </select>
+            </div>
+
+            <div class="opcion-grupo">
+                <label for="colorTitulo">Color títulos:</label>
+                <select id="colorTitulo">
+                    <option value="#333333">Original</option>
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#00FF00">Verde</option>
+                    <option value="#0000FF">Azul</option>
+                    <option value="#FF00FF">Magenta</option>
+                </select>
+            </div>
+
+            <div class="opcion-grupo">
+                <label for="colorTextoNormal">Color texto normal:</label>
+                <select id="colorTextoNormal">
+                    <option value="#333333">Original</option>
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#00FF00">Verde</option>
+                    <option value="#0000FF">Azul</option>
+                    <option value="#FF00FF">Magenta</option>
+                </select>
+            </div>
+
+            <div class="opcion-grupo">
+                <label for="fuenteTexto">Fuente del texto:</label>
+                <select id="fuenteTexto">
+                    <option value="Arial, sans-serif">Arial</option>
+                    <option value="'Times New Roman', serif">Times New Roman</option>
+                    <option value="'Courier New', monospace">Courier New</option>
+                    <option value="'Georgia', serif">Georgia</option>
+                    <option value="'Comic Sans MS', cursive">Comic Sans</option>
+                </select>
+            </div>
+
+            <div class="opcion-grupo">
+                <label for="colorSelectNoDesplegado">Color de opciones y botones:</label>
+                <select id="colorSelectNoDesplegado">
+                    <option value="#333333">Original</option>
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#00FF00">Verde</option>
+                    <option value="#0000FF">Azul</option>
+                    <option value="#FF00FF">Magenta</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1>Generador de lineas de texto</h1>
+
+        <div class="botones-principales">
+            <button id="agregarTexto">Agregar Texto</button>
+            <button id="eliminarUltimo">Eliminar Último</button>
+            <button id="eliminarTodos">Eliminar Todos</button>
+        </div>
+
+        <div class="controles">
+            <div class="control-grupo">
+                <label for="colorSelector">Color texto agregado:</label>
+                <select id="colorSelector">
+                    <option value="#000000">Negro</option>
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#00FF00">Verde</option>
+                    <option value="#0000FF">Azul</option>
+                    <option value="#FF00FF">Magenta</option>
+                </select>
+            </div>
+
+            <div class="control-grupo">
+                <label for="tamanoSelector">Tamaño texto agregado:</label>
+                <select id="tamanoSelector">
+                    <option value="14px">Pequeño</option>
+                    <option value="16px" selected>Mediano</option>
+                    <option value="20px">Grande</option>
+                    <option value="24px">Muy grande</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="contenedorTexto"></div>
+
+        <!-- Sección de Tablas Dinámicas -->
+
+        <h1>Generador de Tablas</h1>
+        <div class="controles-generador">
+            <button id="crearTabla">Crear Nueva Tabla</button>
+            <button id="agregarFila">Agregar Fila</button>
+            <button id="agregarColumna">Agregar Columna</button>
+            <button id="eliminarTabla">Eliminar Tabla</button>
+        </div>
+        <div id="contenedorTablas"></div>
+
+
+        <!-- Botones generados -->
+
+        <h1>Generador de Botones</h1>
+        <div class="controles-generador">
+            <button id="generarBoton">Generar Botón</button>
+            <button id="eliminarUltimoBoton">Eliminar Último</button>
+            <button id="eliminarTodosBotones">Eliminar Todos</button>
+        </div>
+        <div id="contenedorBotones" class="contenedor-elementos"></div>
+
+
+        <!-- Links generados -->
+
+        <h1>Generador de Links</h1>
+        <div class="controles-generador">
+            <button id="generarLink">Generar Link</button>
+            <button id="eliminarUltimoLink">Eliminar Último</button>
+            <button id="eliminarTodosLinks">Eliminar Todos</button>
+        </div>
+        <div id="contenedorLinks" class="contenedor-elementos"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
