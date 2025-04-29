@@ -71,6 +71,11 @@
         "url": "alumnos/JS/John-Suarez.html",
         "avatar": "alumnos/JS/perfil.jpg",
         "description": "Mi ejercicio DOM básico"
+      },
+      {
+        "name": "Steffany Melgarejo",
+        "url": "alumnos/SM/sm.html",
+        "description": "Mi ejercicio DOM básico"
       }
     
   ]
