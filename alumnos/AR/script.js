@@ -20,50 +20,52 @@ document.addEventListener("DOMContentLoaded", function () {
             switch (elementType) {
                 case "container":
                     newElement = document.createElement("div");
-                    newElement.classList.add("created-element");
-                    newElement.innerHTML = `<p>Contenedor</p>`;
+                    newElement.classList.add("created-element", "container-element");
+                    newElement.innerHTML = "<p>Contenedor</p>";
                     break;
                 case "text":
                     newElement = document.createElement("p");
-                    newElement.classList.add("created-element");
+                    newElement.classList.add("created-element", "text-element");
                     newElement.textContent = "Texto";
                     break;
                 case "button":
                     newElement = document.createElement("button");
-                    newElement.classList.add("created-element");
+                    newElement.classList.add("created-element", "button-element");
                     newElement.textContent = "Botón";
                     break;
                 case "input":
                     newElement = document.createElement("input");
-                    newElement.classList.add("created-element");
+                    newElement.classList.add("created-element", "input-element");
                     newElement.placeholder = "Entrada";
                     break;
                 case "link":
                     newElement = document.createElement("a");
-                    newElement.classList.add("created-element");
+                    newElement.classList.add("created-element", "link-element");
                     newElement.textContent = "Enlace";
                     newElement.href = "#";
                     break;
                 case "list":
                     newElement = document.createElement("ul");
-                    newElement.classList.add("created-element");
+                    newElement.classList.add("created-element", "list-element");
                     newElement.innerHTML = "<li>Elemento de lista</li>";
                     break;
                 case "image":
                     newElement = document.createElement("img");
-                    newElement.classList.add("created-element");
+                    newElement.classList.add("created-element", "image-element");
                     newElement.src = "https://via.placeholder.com/150";
                     newElement.alt = "Imagen";
                     break;
                 case "section":
                     newElement = document.createElement("section");
-                    newElement.classList.add("created-element");
+                    newElement.classList.add("created-element", "section-element");
                     newElement.innerHTML = "<h3>Sección</h3><p>Contenido de la sección</p>";
                     break;
             }
 
+            // Añadir nuevo elemento al contenedor de vista previa
             previewContainer.appendChild(newElement);
 
+            // Actualizar la lista del selector de elementos
             const elementNameMap = {
                 container: "Contenedor",
                 text: "Texto",
@@ -75,12 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 section: "Sección"
             };
 
-// Agregar el nuevo elemento al selector con nombre traducido
             const option = document.createElement("option");
             option.value = previewContainer.children.length - 1;
             option.textContent = `${elementNameMap[elementType]} ${previewContainer.children.length}`;
             elementSelector.appendChild(option);
-
         });
     });
 
@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const selectedIndex = elementSelector.value;
         if (selectedIndex !== "-1") {
             selectedElement = previewContainer.children[selectedIndex];
+            selectedElement.classList.add("selected-element");
         } else {
             selectedElement = null;
         }
@@ -138,28 +139,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
         switch (property) {
             case "color":
-                values = ["#3498db", "#e74c3c", "#1abc9c", "#8e44ad"];
+                values = ["red", "green", "blue", "yellow", "black"];
                 break;
             case "background-color":
-                values = ["#ecf0f1", "#bdc3c7", "#95a5a6"];
+                values = ["#ffeb3b", "#f44336", "#2196F3", "#4CAF50", "#FFC107"];
                 break;
             case "font-size":
                 values = ["12px", "16px", "20px", "24px", "30px"];
                 break;
             case "font-family":
-                values = ["Arial", "Verdana", "Times New Roman", "Roboto"];
+                values = ["Arial", "Verdana", "Helvetica", "Times New Roman", "Courier"];
                 break;
             case "border":
-                values = ["none", "2px solid #3498db", "2px dashed #8e44ad"];
+                values = ["1px solid black", "2px dashed red", "3px dotted green"];
                 break;
         }
 
+        // Actualizar los valores en el selector de valores
         valueSelector.innerHTML = '<option value="-1">Seleccionar valor</option>';
-        values.forEach((val) => {
+        values.forEach((value) => {
             const option = document.createElement("option");
-            option.value = val;
-            option.textContent = val;
+            option.value = value;
+            option.textContent = value;
             valueSelector.appendChild(option);
         });
     });
 });
+
+
+
