@@ -73,8 +73,8 @@ document.getElementById('cambiarDescripcion').addEventListener('click', () => {
 //Logica para cambiar el fondo de la tarjeta
 const fondos = [
     "#ffffff",
-    "#f0f8ff",
-    "#ffe4e1",
+    "#BA9962",
+    "#97E968",
     "url('./imagenes/fondo1.png')",
     "url('./imagenes/fondo2.png')",
     "url('./imagenes/fondo3.png')"
