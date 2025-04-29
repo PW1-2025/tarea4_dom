@@ -20,6 +20,12 @@
       "description": "Editor visual interactivo para crear y personalizar elementos HTML. Permite añadir componentes como contenedores, texto, botones, entradas, enlaces y listas, con opciones para modificar sus estilos CSS de forma intuitiva. Ideal para aprender manipulación del DOM y propiedades CSS básicas."
     },
     {
+      "name": "Lucas Godoy",
+      "url": "alumnos/LG/index.html",
+      "avatar": "images/avatar.webp",
+      "description": "Mi ejercicio DOM básico"
+    },
+    {
         "name": "Juan Pérez",
         "url": "alumnos/juan-perez.html",
         "description": "Mi ejercicio DOM básico"
