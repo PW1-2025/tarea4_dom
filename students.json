@@ -1,49 +1,84 @@
-
-
-  [
-    {
-        "name": "HE",
-        "url": "alumnos/HE/he.html",
-        "avatar": "https://avatars.githubusercontent.com/u/28764962?v=4",  
-        "description": "DOM Playground"
-      },
-    { 
-      "name": "Pedro Fernandez 2017",
-      "url": "alumnos/PF/pf.html",
-      "avatar": "https://www.fctunca.edu.py/application/files/8715/6388/6844/06_sacyt_2017.jpg",
-      "description": "Trabajo realizado en PW1 en 2017"
-    },
-    {
-      "name": "Jorge Areco",
-      "url": "alumnos/JA/jorge-areco.html",
-      "avatar": "https://avatars.githubusercontent.com/u/88943942?s=400&u=ed7c1817e0d7ced265a79b4143b084a5e90a992f&v=4",
-      "description": "Editor visual interactivo para crear y personalizar elementos HTML. Permite añadir componentes como contenedores, texto, botones, entradas, enlaces y listas, con opciones para modificar sus estilos CSS de forma intuitiva. Ideal para aprender manipulación del DOM y propiedades CSS básicas."
-    },
-    {
-        "name": "Juan Pérez",
-        "url": "alumnos/juan-perez.html",
-        "description": "Mi ejercicio DOM básico"
-      },
-      {
-        "name": "Giovanni Ortiz",
-        "url": "alumnos/GO/giova-ortiz.html",
-        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZEQAPMvvyIHipOEzpRE9CbSSCrvXM-_zjQ&s",
-        "description": "Editor interactivo para crear y personalizar elementos HTML con opciones fáciles de edición de estilo. Ideal para aprender DOM y CSS básico."
-      },
-    {
-        "name": "Juan Pérez",
-        "url": "alumnos/juan-perez.html",
-        "description": "Mi ejercicio DOM básico"
-      },
-    {
-        "name": "Juan Pérez",
-        "url": "alumnos/juan-perez.html",
-        "description": "Mi ejercicio DOM básico"
-      },
-    {
-        "name": "Juan Pérez",
-        "url": "alumnos/juan-perez.html",
-        "description": "Mi ejercicio DOM básico"
-      }
-  ]
-  
+[
+  {
+    "name": "HE",
+    "url": "alumnos/HE/he.html",
+    "avatar": "https://avatars.githubusercontent.com/u/28764962?v=4",
+    "description": "DOM Playground"
+  },
+  {
+    "name": "Pedro Fernandez 2017",
+    "url": "alumnos/PF/pf.html",
+    "avatar": "https://www.fctunca.edu.py/application/files/8715/6388/6844/06_sacyt_2017.jpg",
+    "description": "Trabajo realizado en PW1 en 2017"
+  },
+  {
+    "name": "Jorge Areco",
+    "url": "alumnos/JA/jorge-areco.html",
+    "avatar": "https://avatars.githubusercontent.com/u/88943942?s=400&u=ed7c1817e0d7ced265a79b4143b084a5e90a992f&v=4",
+    "description": "Editor visual interactivo para crear y personalizar elementos HTML. Permite añadir componentes como contenedores, texto, botones, entradas, enlaces y listas, con opciones para modificar sus estilos CSS de forma intuitiva. Ideal para aprender manipulación del DOM y propiedades CSS básicas."
+  },
+  {
+    "name": "Juan Pérez",
+    "url": "alumnos/juan-perez.html",
+    "description": "Mi ejercicio DOM básico"
+  },
+  {
+    "name": "Giovanni Ortiz",
+    "url": "alumnos/GO/giova-ortiz.html",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZEQAPMvvyIHipOEzpRE9CbSSCrvXM-_zjQ&s",
+    "description": "Editor interactivo para crear y personalizar elementos HTML con opciones fáciles de edición de estilo. Ideal para aprender DOM y CSS básico."
+  },
+  {
+    "name": "Rossmary Villalba",
+    "url": "alumnos/RV/rossmary.html",
+    "avatar": "https://media.licdn.com/dms/image/v2/D4D03AQF8Ov27ru7wyA/profile-displayphoto-shrink_200_200/B4DZWuS__MHYAY-/0/1742385972318?e=2147483647&v=beta&t=HzjxAXOIJ1fp0xXOSDr6dTL6Pbyc-yBJOc2HGQLHDn0",
+    "description": "DOM Básico✨"
+  },
+  {
+    "name": "Wilson Arevalos",
+    "url": "alumnos/WA/wa.html",
+    "avatar": "alumnos/WA/img/Wilson.jpg",
+    "description": "Tarea 4 Barcelona Playground"
+  },
+  {
+    "name": "Ale Rojas",
+    "url": "alumnos/AleRojas/alerojas.html",
+    "avatar": "alumnos/AleRojas/alefoto4.jpg",
+    "description": "Mi ejercicio DOM básico"
+  },
+  {
+    "name": "César Medina",
+    "url": "alumnos/CM/CM.html",
+    "description": "Una lista que se puede modificar de manera dinamica usando Javascript vanilla"
+  },
+  {
+    "name": "Lucas Godoy",
+    "url": "alumnos/LG/index.html",
+    "avatar": "images/avatar.webp",
+    "description": "Mi ejercicio DOM básico"
+  },
+  {
+    "name": "Alexis Guerrero",
+    "url": "alumnos/AG/ag.html",
+    "avatar": "https://tr.rbxcdn.com/180DAY-a8273bb70d4ded6359cd241f40ef543d/420/420/Hat/Webp/noFilter",
+    "description": "Mi trabajo practico de DOM"
+  },
+  {
+    "name": "Iván Sosa",
+    "url": "alumnos/IvanSosa/index.html",
+    "avatar": "alumnos/IvanSosa/image.png",
+    "description": "Mi trabajo practico de DOM"
+  },
+  {
+    "name": "John Suarez",
+    "url": "alumnos/JS/John-Suarez.html",
+    "avatar": "alumnos/JS/perfil.jpg",
+    "description": "Mi ejercicio DOM básico"
+  },
+  {
+    "name": "Steffany Melgarejo",
+    "url": "alumnos/SM/sm.html",
+    "avatar": "alumnos/SM/imagenes/avatar9.png",
+    "description": "Generador de Avatar básico"
+  }
+]

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Playground Completo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <style>
+        /* Esto será reemplazado por el SCSS compilado */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DOM Playground Completo</h1>
+        <h2>Crea y manipula diversos elementos</h2>
+
+        <div class="demo-area" id="demo-area">
+            <div id="demo-element" class="content-box">
+                <p>¡Área de trabajo! Crea elementos abajo.</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <fieldset>
+                <legend>Crear Elementos</legend>
+                <div class="button-group">
+                    <button id="btn-add-text"><i class="fas fa-font"></i> Texto</button>
+                    <button id="btn-add-link"><i class="fas fa-link"></i> Enlace</button>
+                    <button id="btn-add-div"><i class="fas fa-square"></i> Div</button>
+                </div>
+                <div class="button-group">
+                    <button id="btn-add-table"><i class="fas fa-table"></i> Tabla</button>
+                    <button id="btn-add-list"><i class="fas fa-list"></i> Lista</button>
+                    <button id="btn-add-image"><i class="fas fa-image"></i> Imagen</button>
+                </div>
+                <div class="form-group">
+                    <label for="element-content">Contenido:</label>
+                    <textarea id="element-content" rows="2" placeholder="Contenido del elemento"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="element-class">Clase CSS:</label>
+                    <input type="text" id="element-class" placeholder="clase-personalizada">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Modificar Elementos</legend>
+                <button id="btn-remove-element"><i class="fas fa-trash"></i> Eliminar Seleccionado</button>
+                <button id="btn-clear-all"><i class="fas fa-broom"></i> Limpiar Todo</button>
+                <button id="btn-toggle-visibility"><i class="fas fa-eye-slash"></i> Ocultar/Mostrar</button>
+                <div class="form-group">
+                    <label for="modify-property">Propiedad:</label>
+                    <select id="modify-property">
+                        <option value="textContent">Texto</option>
+                        <option value="className">Clase</option>
+                        <option value="style.color">Color texto</option>
+                        <option value="style.backgroundColor">Color fondo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modify-value">Valor:</label>
+                    <input type="text" id="modify-value" placeholder="Nuevo valor">
+                </div>
+                <button id="btn-apply-modification"><i class="fas fa-magic"></i> Aplicar</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Estilos Rápidos</legend>
+                <div class="button-group">
+                    <button data-style="color: #e74c3c"><i class="fas fa-paint-brush"></i> Rojo</button>
+                    <button data-style="fontWeight: 'bold'"><i class="fas fa-bold"></i> Negrita</button>
+                </div>
+                <div class="button-group">
+                    <button data-style="textDecoration: 'underline'"><i class="fas fa-underline"></i> Subrayado</button>
+                    <button data-style="fontStyle: 'italic'"><i class="fas fa-italic"></i> Cursiva</button>
+                </div>
+                <div class="form-group">
+                    <label for="quick-color">Color texto:</label>
+                    <input type="color" id="quick-color" value="#000000">
+                </div>
+                <div class="form-group">
+                    <label for="quick-bg">Color fondo:</label>
+                    <input type="color" id="quick-bg" value="#ffffff">
+                </div>
+            </fieldset>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

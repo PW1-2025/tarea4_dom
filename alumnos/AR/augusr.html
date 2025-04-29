@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Studio Pro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <h1><i class="fas fa-cogs"></i> Página Interactiva </h1>
+  <p class="subtitle"></p>
+</header>
+
+<main class="main-container">
+  <section class="control-panel">
+    <div class="panel">
+      <h2><i class="fas fa-plus-circle"></i> Crear Elementos</h2>
+      <div class="element-buttons">
+        <button class="element-btn" data-type="container"><i class="fas fa-box"></i> Contenedor</button>
+        <button class="element-btn" data-type="text"><i class="fas fa-font"></i> Texto</button>
+        <button class="element-btn" data-type="button"><i class="fas fa-hand-pointer"></i> Botón</button>
+        <button class="element-btn" data-type="input"><i class="fas fa-keyboard"></i> Entrada</button>
+        <button class="element-btn" data-type="link"><i class="fas fa-link"></i> Enlace</button>
+        <button class="element-btn" data-type="list"><i class="fas fa-list-ul"></i> Lista</button>
+        <button class="element-btn" data-type="image"><i class="fas fa-image"></i> Imagen</button>
+        <button class="element-btn" data-type="section"><i class="fas fa-columns"></i> Sección</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2><i class="fas fa-sliders-h"></i> Editar Elemento</h2>
+      <div class="form-group">
+        <label for="element-selector"><i class="fas fa-object-group"></i> Elemento:</label>
+        <select id="element-selector">
+          <option value="-1">Seleccionar elemento</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="property-selector"><i class="fas fa-paint-brush"></i> Propiedad:</label>
+        <select id="property-selector">
+          <option value="-1">Seleccionar propiedad</option>
+          <option value="color">Color</option>
+          <option value="background-color">Color de fondo</option>
+          <option value="font-size">Tamaño de fuente</option>
+          <option value="font-family">Familia de fuente</option>
+          <option value="border">Bordes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="value-selector"><i class="fas fa-tint"></i> Valor:</label>
+        <select id="value-selector">
+          <option value="-1">Seleccionar valor</option>
+        </select>
+      </div>
+
+      <div class="action-buttons">
+        <button id="apply-style" class="btn primary"><i class="fas fa-check"></i> Aplicar</button>
+        <button id="reset-styles" class="btn secondary"><i class="fas fa-undo"></i> Reiniciar</button>
+        <button id="delete-element" class="btn danger"><i class="fas fa-trash"></i> Eliminar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="preview-panel">
+    <div class="panel">
+      <div class="preview-header">
+        <h2><i class="fas fa-eye"></i> Vista Previa</h2>
+        <button id="clear-all" class="btn secondary"><i class="fas fa-broom"></i> Limpiar</button>
+      </div>
+      <div id="preview-container" class="preview-container">
+        <p class="empty-message">Usa los botones de creación para comenzar a diseñar</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
