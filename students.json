@@ -57,6 +57,12 @@
         "url": "alumnos/IvanSosa/index.html",
         "avatar": "alumnos/IvanSosa/image.png",
         "description": "Mi trabajo practico de DOM"
+      },
+      {
+        "name": "John Suarez",
+        "url": "alumnos/JS/John-Suarez.html",
+        "avatar": "alumnos/JS/perfil.jpg",
+        "description": "Mi ejercicio DOM básico"
       }
     
   ]
