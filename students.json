@@ -24,6 +24,12 @@
         "url": "alumnos/juan-perez.html",
         "description": "Mi ejercicio DOM básico"
       },
+      {
+        "name": "Giovanni Ortiz",
+        "url": "alumnos/GO/giova-ortiz.html",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZEQAPMvvyIHipOEzpRE9CbSSCrvXM-_zjQ&s",
+        "description": "Editor interactivo para crear y personalizar elementos HTML con opciones fáciles de edición de estilo. Ideal para aprender DOM y CSS básico."
+      },
     {
         "name": "Juan Pérez",
         "url": "alumnos/juan-perez.html",

@@ -1,0 +1,301 @@
+:root {
+    /* Variables globales para colores, para facilitar la personalización del tema */
+    --primary-color: #666; /* Gris suave */
+    --secondary-color: #4c4c99; /* Gris azulado */
+    --accent-color: #8e44ad; /* Púrpura suave */
+    --danger-color: #e74c3c; /* Rojo suave */
+    --success-color: #4cd137; /* Verde suave */
+    --background-color: #f4f4f4; /* Fondo gris claro */
+    --text-color: #333; /* Color de texto oscuro */
+    --border-color: #d1d1d1; /* Gris para bordes */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+* {
+    /* Resetea márgenes, rellenos y establece un box-sizing consistente en todos los elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente estándar */
+}
+
+
+
+body {
+    /* Estilos generales para el cuerpo del documento */
+    background-color: var(--background-color); /* Fondo claro */
+    color: var(--text-color); /* Texto oscuro */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.header {
+    /* Estilos para el encabezado */
+    background: var(--primary-color); /* Color principal del encabezado */
+    color: white; /* Texto blanco */
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px var(--shadow-color); /* Sombra suave */
+    margin-bottom: 2rem; /* Espacio debajo del encabezado */
+}
+
+.header h1 {
+    /* Título principal */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header .subtitle {
+    /* Subtítulo */
+    font-size: 1.1rem;
+    opacity: 0.9; /* Ligera transparencia */
+}
+
+.main-container {
+    /* Contenedor principal con dos columnas: 300px y el resto */
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1.5rem; /* Espacio entre columnas */
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido */
+    padding: 0 1.5rem; /* Espaciado interior */
+}
+
+.control-panel {
+    /* Panel de control con una dirección de columna */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.panel {
+    /* Estilos comunes para los paneles */
+    background-color: white;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px var(--shadow-color); /* Sombra suave */
+    transition: transform 0.3s ease; /* Animación para el hover */
+}
+
+.panel:hover {
+    /* Efecto hover: eleva el panel */
+    transform: translateY(-5px);
+}
+
+.element-buttons {
+    /* Estilo de botones de elementos, en dos columnas */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.element-btn {
+    /* Estilos para los botones de creación de elementos */
+    padding: 0.8rem;
+    border: 2px solid var(--border-color);
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.element-btn:hover {
+    /* Efecto hover: cambio de color y elevación */
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(67, 97, 238, 0.2);
+}
+
+
+
+.element-btn i {
+    /* Estilo del ícono dentro de los botones */
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+    color: var(--primary-color);
+
+}
+
+
+.form-group {
+    /* Espaciado entre los grupos de formularios */
+    margin-bottom: 1.2rem;
+}
+
+label {
+    
+    /* Estilo para las etiquetas de los formularios */
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600; /* Negrita */
+}
+
+select {
+    /* Estilo para los selectores de formularios */
+    width: 100%;
+    padding: 0.7rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+select:focus {
+    /* Efecto cuando el selector está enfocado */
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.action-buttons {
+    /* Estilo para los botones de acción */
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    /* Estilo base para los botones */
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn.primary {
+    /* Botón primario con color de fondo principal */
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn.primary:hover {
+    /* Efecto hover para el botón primario */
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(67, 97, 238, 0.3);
+}
+
+.btn.secondary {
+    /* Botón secundario con borde y texto en el color primario */
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn.secondary:hover {
+    /* Efecto hover para el botón secundario */
+    background-color: #f0f4ff;
+    transform: translateY(-2px);
+}
+
+.btn.danger {
+    /* Botón de peligro con color rojo */
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.btn.danger:hover {
+    /* Efecto hover para el botón de peligro */
+    background-color: #d3165f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(247, 37, 133, 0.3);
+}
+
+.preview-container {
+    /* Estilo de la vista previa de los elementos */
+    min-height: 500px;
+    border: 2px dashed var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.empty-message {
+    /* Estilo para el mensaje cuando no hay elementos en la vista previa */
+    color: #adb5bd;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.1rem;
+}
+
+.created-element {
+    /* Estilo de los elementos creados con animación */
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    animation: fadeIn 0.5s ease;
+}
+
+.created-element:hover {
+    /* Efecto hover para los elementos creados */
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.notification {
+    /* Notificación fija en la parte inferior derecha */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.notification.show {
+    /* Notificación visible cuando se activa */
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.notification-success {
+    /* Estilo para notificación de éxito */
+    background-color: var(--success-color);
+}
+
+.notification-error {
+    /* Estilo para notificación de error */
+    background-color: var(--danger-color);
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    /* Para pantallas menores a 768px: una columna */
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .element-buttons {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro botones en línea */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Para pantallas menores a 480px: dos botones en línea */
+    .element-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .action-buttons {
+        /* Botones de acción en columna */
+        flex-direction: column;
+    }
+}
