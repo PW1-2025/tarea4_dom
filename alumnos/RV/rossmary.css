@@ -1,0 +1,55 @@
+body {
+    background-color: #fff0f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header {
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    color: #c71585;
+  }
+  
+  .acciones button,
+  .acciones-complejas button {
+    background-color: #ffb6c1;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .acciones button:hover,
+  .acciones-complejas button:hover {
+    background-color: #ff69b4;
+    color: white;
+  }
+  
+  .frase-container p {
+    font-size: 18px;
+    color: #0e020e;
+    margin: 10px 0;
+  }
+  
+  #contenedor {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px dashed #d8bfd8;
+  }
+  
+  select {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  
+  hr {
+    margin: 40px 0;
+  }
+  

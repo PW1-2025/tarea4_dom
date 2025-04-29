@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barcelona</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>FC Barcelona </h1>
+        <h2>¡Visca el Barça!</h2>
+        
+
+        <div class="demo-area" id="demo-area">
+            <p id="demo-element">Haz clic en un botón para ver algo del Barça</p>
+        </div>
+        <fieldset>
+            <legend>Personalización</legend>
+            <input type="text" id="visitor-name" placeholder="Escribe tu nombre">
+            <p id="welcome-message"></p>
+        </fieldset>
+
+        <div class="controls">
+            <fieldset>
+                <legend>Equipaciones</legend>
+                <button id="btn-first-kit">Primera equipación</button>
+                <button id="btn-second-kit">Segunda equipación</button>
+                <button id="btn-third-kit">Tercera equipación</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Club</legend>
+                <button id="btn-shield">Mostrar escudo</button>
+                <button id="btn-slogan">Mostrar slogan</button>
+                <button id="btn-show-squad">Mostrar Plantilla</button>
+
+                    <div id="squad-section" class="hidden">
+                        <input type="text" id="player-search" placeholder="Buscar jugador...">
+                        <ul id="squad-list"></ul>
+                    </div>
+            </fieldset>
+            
+
+            <fieldset>
+                <legend>Extras</legend>
+                <button id="btn-toggle-background">Alternar fondo</button>
+                <button id="btn-increase-size">Aumentar tamaño</button>
+                <button id="btn-decrease-size">Disminuir tamaño</button>
+                <button id="btn-play-anthem">Reproducir himno</button>
+                <button id="btn-stop-anthem">Detener himno</button>
+            </fieldset>
+        </div>
+
+        <audio id="anthem" src="img/audio.mp3"></audio>
+    </div>
+</body>
+</html>
