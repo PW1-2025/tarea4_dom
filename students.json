@@ -47,6 +47,14 @@
     },
  
     {
+
+      "name": "Lucas Godoy",
+      "url": "alumnos/LG/index.html",
+      "avatar": "images/avatar.webp",
+      "description": "Mi ejercicio DOM básico"
+    },
+    
+    {
         "name": "Alexis Guerrero",
         "url": "alumnos/AG/ag.html",
         "avatar": "https://tr.rbxcdn.com/180DAY-a8273bb70d4ded6359cd241f40ef543d/420/420/Hat/Webp/noFilter",
