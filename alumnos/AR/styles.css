@@ -1,4 +1,4 @@
-/* Global Styles */
+/* CSS General */
 * {
     margin: 0;
     padding: 0;
@@ -6,147 +6,150 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
+h1, h2 {
+    color: #333;
+}
+
+/* Header */
+.header {
     text-align: center;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
-header h1 {
+.header h1 {
     font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
-header .subtitle {
-    font-size: 1.3rem;
-    margin-top: 0.5rem;
+.subtitle {
+    font-size: 1.2rem;
+    color: #777;
 }
 
 /* Main Container */
 .main-container {
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
-    gap: 2rem;
-    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1200px;
+    gap: 20px;
 }
 
+/* Panel Control */
 .control-panel {
     flex: 1;
-    max-width: 300px;
-}
-
-.panel {
     background-color: #fff;
-    padding: 2rem;
-    margin-bottom: 1.5rem;
+    padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.panel h2 {
+.control-panel .panel {
+    margin-bottom: 1.5rem;
+}
+
+.control-panel h2 {
     font-size: 1.6rem;
-    margin-bottom: 1.2rem;
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 0.5rem;
+    color: #333;
+    margin-bottom: 1rem;
 }
 
 .element-buttons {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 }
 
 .element-btn {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 8px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1.1rem;
+    border-radius: 4px;
+    text-align: center;
 }
 
 .element-btn:hover {
-    background-color: #f0f0f0;
-    transform: translateY(-5px);
+    background-color: #1976d2;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    display: block;
-    font-size: 1.1rem;
-}
-
-select {
-    width: 100%;
-    padding: 0.8rem;
-    border-radius: 8px;
-    border: 1px solid #ddd;
+.form-group label {
     font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
 .action-buttons {
     display: flex;
-    justify-content: space-between;
-    margin-top: 1.5rem;
+    gap: 10px;
 }
 
-button {
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
+.action-buttons button {
+    flex: 1;
+    padding: 12px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button.primary {
-    background-color: #4CAF50;
-    color: white;
+.action-buttons .btn {
+    font-size: 1rem;
 }
 
-button.primary:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
+.action-buttons .primary {
+    background-color: #4caf50;
+    color: #fff;
 }
 
-button.secondary {
-    background-color: #f7f7f7;
-    color: #555;
-    border: 1px solid #ddd;
+.action-buttons .secondary {
+    background-color: #f44336;
+    color: #fff;
 }
 
-button.secondary:hover {
-    background-color: #e1e1e1;
+.action-buttons .danger {
+    background-color: #ff9800;
+    color: #fff;
 }
 
-button.danger {
-    background-color: #e74c3c;
-    color: white;
-}
-
-button.danger:hover {
-    background-color: #c0392b;
+.action-buttons button:hover {
+    opacity: 0.9;
 }
 
 /* Preview Panel */
 .preview-panel {
     flex: 2;
-    max-width: 70%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.preview-panel .panel {
+    margin-bottom: 1.5rem;
 }
 
 .preview-header {
@@ -156,52 +159,81 @@ button.danger:hover {
 }
 
 .preview-header h2 {
-    font-size: 1.7rem;
-    color: #4CAF50;
+    font-size: 1.6rem;
+    color: #333;
 }
 
 .preview-container {
-    background-color: #fff;
-    min-height: 300px;
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    min-height: 200px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
 }
 
 .empty-message {
-    color: #888;
     text-align: center;
+    color: #888;
     font-size: 1.2rem;
 }
 
-/* Media Queries */
+.created-element {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.selected-element {
+    border: 2px solid #2196f3;
+}
+
+.container-element {
+    background-color: #f5f5f5;
+}
+
+.text-element {
+    font-size: 16px;
+}
+
+.button-element {
+    padding: 10px 20px;
+}
+
+.input-element {
+    width: 100%;
+}
+
+.link-element {
+    color: #2196f3;
+}
+
+.list-element {
+    list-style-type: disc;
+}
+
+.image-element {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-element {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
-        padding: 2rem;
-    }
-
-    .control-panel {
-        max-width: 100%;
-    }
-
-    .preview-panel {
-        max-width: 100%;
-        margin-top: 2rem;
+        width: 95%;
     }
 
     .element-buttons {
-        grid-template-columns: 1fr;
-    }
-
-    button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .action-buttons {
-        flex-direction: column;
-        margin-top: 1rem;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+

@@ -142,16 +142,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 values = ["red", "green", "blue", "yellow", "black"];
                 break;
             case "background-color":
-                values = ["#ffeb3b", "#f44336", "#2196f3", "#4caf50", "#ff9800"];
+                values = ["#ffeb3b", "#f44336", "#2196F3", "#4CAF50", "#FFC107"];
                 break;
             case "font-size":
-                values = ["12px", "14px", "16px", "18px", "20px"];
+                values = ["12px", "16px", "20px", "24px", "30px"];
                 break;
             case "font-family":
-                values = ["Arial", "Helvetica", "Times New Roman", "Courier New", "Georgia"];
+                values = ["Arial", "Verdana", "Helvetica", "Times New Roman", "Courier"];
                 break;
             case "border":
-                values = ["1px solid #ddd", "2px solid #2196f3", "3px dashed #f44336"];
+                values = ["1px solid black", "2px dashed red", "3px dotted green"];
                 break;
         }
 
