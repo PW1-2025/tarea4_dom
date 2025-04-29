@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Avatar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Generador de Avatar</h1>
+        <div class="contenido">
+
+            <section id="formulario" class="controls">
+                <fieldset>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                </fieldset>
+
+                <fieldset>
+                    <button id="cambiarImagen" type="button">Avatar</button>
+                </fieldset>
+
+                <fieldset>
+                    <button id="cambiarDescripcion" type="button">Descripcion</button>
+
+                </fieldset>
+
+                <fieldset>
+                    <button id="fondoTarjeta" type="button">Fondo </button>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Color del Nombre</legend>
+                    <input type="color" id="colorNombre">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tipografía</legend>
+                    <select id="tipografia">
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="'Courier New', monospace">Courier New</option>
+                        <option value="'Times New Roman', serif">Times New Roman</option>
+                        <option value="'Comic Sans MS', cursive">Comic Sans MS</option>
+                        <option value="'Verdana', sans-serif">Verdana</option>
+                    </select>
+                </fieldset>
+            </section>
+
+            <div class="demo-area" id="tarjetas"></div>
+
+            <!-- contenido -->
+        </div>
+        <!-- container -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

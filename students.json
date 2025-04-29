@@ -37,6 +37,11 @@
         "name": "Juan Pérez",
         "url": "alumnos/juan-perez.html",
         "description": "Mi ejercicio DOM básico"
+      },
+      {
+        "name": "Steffany Melgarejo",
+        "url": "alumnos/SM/sm.html",
+        "description": "Mi ejercicio DOM básico"
       }
   ]
   
